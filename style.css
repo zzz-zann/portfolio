@@ -1,0 +1,377 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a; /* Dark sleek developer theme */
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+/* Layout Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.logo {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #38bdf8;
+}
+
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #f8fafc;
+}
+
+/* Sections */
+.section {
+    margin: 60px 0;
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #1e293b;
+    padding-bottom: 10px;
+}
+
+/* Hero Section */
+.hero {
+    margin: 60px 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 1.15rem;
+        font-family: 'Times New Roman', Times, serif;
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+/* 2-Column Responsive Layout */
+.layout-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media (min-width: 900px) {
+    .layout-wrapper {
+        flex-direction: row;
+        gap: 50px;
+        padding: 40px;
+    }
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 100%;
+}
+
+@media (min-width: 900px) {
+    .sidebar {
+        width: 320px;
+        position: sticky;
+        top: 40px;
+        height: calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+    color: #38bdf8;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.profile-header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #f8fafc;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.role {
+    color: #38bdf8;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.bio {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+/* Sidebar Navigation */
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.sidebar-nav a {
+    color: #64748b;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.sidebar-nav a:hover {
+    color: #38bdf8;
+    transform: translateX(4px);
+}
+
+.sidebar-footer {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    margin-top: 30px;
+}
+
+@media (min-width: 900px) {
+    .main-content {
+        margin-top: 0;
+    }
+}
+
+/* Sections & Cards */
+.section {
+    margin-bottom: 45px;
+}
+
+.section h2 {
+    font-size: 1.3rem;
+    color: #f8fafc;
+    margin-bottom: 16px;
+    letter-spacing: -0.3px;
+}
+
+.card {
+    background: #151d30;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 24px;
+    transition: border-color 0.2s;
+}
+
+.card:hover {
+    border-color: #334155;
+}
+
+/* Experience & Education */
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.resume-header h3 {
+    font-size: 1.1rem;
+    color: #f8fafc;
+}
+
+.date {
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.company {
+    color: #38bdf8;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.bullet-list {
+    margin-left: 18px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.bullet-list li {
+    margin-bottom: 6px;
+}
+
+.details {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-category h4 {
+    font-size: 0.85rem;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tags span {
+    background-color: #1e293b;
+    color: #38bdf8;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid #334155;
+}
+
+/* Projects Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 650px) {
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card h3 {
+    font-size: 1.05rem;
+    color: #f8fafc;
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    color: #94a3b8;
+    font-size: 0.88rem;
+    margin-bottom: 16px;
+}
+
+.project-links {
+    margin-top: 12px;
+}
+
+.project-links a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.85rem;
+    transition: background-color 0.2s;
+}
+
+.btn.primary {
+    background-color: #38bdf8;
+    color: #0b0f19;
+}
+
+.btn.primary:hover {
+    background-color: #0ea5e9;
+}
+
+.btn.secondary {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    border: 1px solid #334155;
+}
+
+.btn.secondary:hover {
+    background-color: #334155;
+}
+
+.contact-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    padding-top: 30px;
+    margin-top: 40px;
+    border-top: 1px solid #1e293b;
+    color: #64748b;
+    font-size: 0.8rem;
+}
