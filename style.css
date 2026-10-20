@@ -34,7 +34,7 @@ html {
        --card-background: #90c2f1;
        --border: #e2e8f0;
        --border-hover: #cbd5e1;
-       --accent: #5293d0;
+       --accent: #4982b7;
        --tag-background: #c9e0f0;
        --button-dark-background: #b1ccee;
        --button-dark-hover: #5297ec;
@@ -42,7 +42,8 @@ html {
    }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: "Lora", serif;
+    font-family: 'Times New Roman', Times, serif;
     background-color: var(--background);
     color: var(--text);
     line-height: 1.6;
